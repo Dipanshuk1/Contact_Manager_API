@@ -24,7 +24,7 @@ app.use("/api/contacts", contactRoutes);
 connectDB();
 
 app.get("/",(req,res)=>{
-    app.res("This is root page");
+    res.send("This is root page");
 })
 
 const PORT=process.env.PORT || 4000;
